@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرحباً بك في الموقع</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        #welcomeMessage {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        #devName {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        #startBtn {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        #startBtn:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcomeMessage">مرحباً بك في الموقع!</div>
+    <div id="devName">Dev: DXGӨΣ</div>
+    <button id="startBtn">ابدأ</button>
+
+    <script>
+        // تحديد الزر "ابدأ"
+        const startBtn = document.getElementById('startBtn');
+
+        // إضافة حدث عند الضغط على الزر "ابدأ"
+        startBtn.addEventListener('click', () => {
+            // تحويل المستخدم إلى لعبة الديناصور على موقع Poki
+            window.location.href = "https://poki.com/ar/g/dinosaur-game";
+        });
+    </script>
+</body>
+</html>
